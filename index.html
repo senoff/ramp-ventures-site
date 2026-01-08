@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramp Ventures - We Buy SaaS Companies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+        
+        body { font-family: 'Open Sans', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), 
+                        url('assets/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img-hover {
+            filter: grayscale(100%);
+            transition: all 0.5s ease;
+        }
+        .img-hover:hover {
+            filter: grayscale(0%);
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800">
+
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#"><img src="assets/logo.png" alt="Ramp Ventures" class="h-10"></a>
+            <div class="hidden md:flex space-x-8 font-bold text-xs uppercase tracking-widest">
+                <a href="#our-companies" class="hover:text-blue-600 transition">Companies</a>
+                <a href="#team" class="hover:text-blue-600 transition">Team</a>
+                <a href="#contactus" class="hover:text-blue-600 transition border-2 border-blue-600 px-4 py-2 rounded-full">Contact us</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-bg h-screen flex flex-col justify-center items-center text-center text-white px-4">
+        <h1 class="text-5xl md:text-7xl font-bold mb-4 uppercase tracking-tight">We <span class="text-blue-500">BUY</span></h1>
+        <p class="text-2xl md:text-4xl font-light tracking-widest uppercase">SaaS Companies</p>
+    </header>
+
+    <section id="our-companies" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-16 uppercase tracking-widest">Our Companies</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-16 items-center">
+                <img src="assets/rightinbox.png" alt="RightInbox" class="h-10 mx-auto img-hover">
+                <img src="assets/voilanorbert.png" alt="VoilaNorbert" class="h-10 mx-auto img-hover">
+                <img src="assets/mailshake.png" alt="Mailshake" class="h-10 mx-auto img-hover">
+                <div class="relative group">
+                    <span class="absolute -top-6 left-1/2 -translate-x-1/2 text-[9px] bg-blue-600 text-white px-2 py-0.5 rounded uppercase font-bold tracking-tighter">Acquired</span>
+                    <img src="assets/narrow.png" alt="Narrow" class="h-10 mx-auto img-hover">
+                </div>
+                <img src="assets/linktexting.png" alt="LinkTexting" class="h-10 mx-auto img-hover">
+                <img src="assets/pick.png" alt="Pick" class="h-10 mx-auto img-hover">
+                <img src="assets/quuu.png" alt="Quuu" class="h-10 mx-auto img-hover">
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="py-24 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 uppercase tracking-widest">Team</h2>
+            <div class="grid md:grid-cols-2 gap-20">
+                <div class="flex flex-col md:flex-row gap-8 items-center text-center md:text-left">
+                    <img src="assets/bob.png" alt="Bob Senoff" class="w-48 img-hover">
+                    <div>
+                        <h4 class="text-2xl font-bold mb-2">Bob Senoff</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">Bob brings over 20 years experience investing in and working with companies on product management, development and operations.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-8 items-center text-center md:text-left">
+                    <img src="assets/sujan.png" alt="Sujan Patel" class="w-48 img-hover">
+                    <div>
+                        <h4 class="text-2xl font-bold mb-2">Sujan Patel</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">Sujan brings over 14 years of internet marketing experience to work on expanding all areas of marketing and sales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactus" class="py-24 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6 uppercase tracking-widest">Contact us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <button class="border-2 border-gray-300 py-3 px-6 rounded font-semibold text-xs uppercase hover:bg-blue-600 hover:text-white transition">Am a Founder</button>
+                <button class="border-2 border-gray-300 py-3 px-6 rounded font-semibold text-xs uppercase hover:bg-blue-600 hover:text-white transition">Partnership Opportunity</button>
+                <button class="border-2 border-gray-300 py-3 px-6 rounded font-semibold text-xs uppercase hover:bg-blue-600 hover:text-white transition">Have A Company for Sale</button>
+                <button class="border-2 border-gray-300 py-3 px-6 rounded font-semibold text-xs uppercase hover:bg-blue-600 hover:text-white transition">Am an Investor</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t py-12 text-center text-[10px] text-gray-400 uppercase tracking-widest">
+        © All Rights Reserved. Ramp Ventures
+    </footer>
+
+</body>
+</html>
