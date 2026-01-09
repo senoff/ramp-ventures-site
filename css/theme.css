@@ -70,7 +70,7 @@ span.page-numbers.current {
     position: relative;
     display: inline-block;
     float: right;
-    background: url(images/arrows/pagination-arrow.svg) no-repeat;
+    background: url(../images/icons/pagination-arrow.svg) no-repeat;
     background-position: center right;
     padding-right: 15px;
 }
