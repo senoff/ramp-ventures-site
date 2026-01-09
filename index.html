@@ -1,106 +1,301 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramp Ventures - We Buy SaaS Companies</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
-        
-        body { font-family: 'Open Sans', sans-serif; }
-        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; }
-        
-        .hero-bg {
-            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), 
-                        url('assets/hero-bg.jpg');
-            background-size: cover;
-            background-position: center;
-        }
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ramp Ventures - We Buy SaaS Companies</title>
 
-        .img-hover {
-            filter: grayscale(100%);
-            transition: all 0.5s ease;
-        }
-        .img-hover:hover {
-            filter: grayscale(0%);
-        }
-    </style>
-</head>
-<body class="bg-white text-slate-800">
+		<link href="wp-content/themes/ramp/img/icons/favicon.ico" rel="shortcut icon">
+		<link href="wp-content/themes/ramp/img/icons/touch.png" rel="apple-touch-icon-precomposed">
 
-    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#"><img src="assets/logo.png" alt="Ramp Ventures" class="h-10"></a>
-            <div class="hidden md:flex space-x-8 font-bold text-xs uppercase tracking-widest">
-                <a href="#our-companies" class="hover:text-blue-600 transition">Companies</a>
-                <a href="#team" class="hover:text-blue-600 transition">Team</a>
-                <a href="#contactus" class="hover:text-blue-600 transition border-2 border-blue-600 px-4 py-2 rounded-full">Contact us</a>
-            </div>
-        </div>
-    </nav>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="We Grow SaaS Companies">
 
-    <header class="hero-bg h-screen flex flex-col justify-center items-center text-center text-white px-4">
-        <h1 class="text-5xl md:text-7xl font-bold mb-4 uppercase tracking-tight">We <span class="text-blue-500">BUY</span></h1>
-        <p class="text-2xl md:text-4xl font-light tracking-widest uppercase">SaaS Companies</p>
-    </header>
+		<meta property="og:locale" content="en_US"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:title" content="Ramp Ventures - We Buy SaaS Companies"/>
+		<meta property="og:description" content="We Buy SaaS Companies"/>
+		<meta property="og:site_name" content="Ramp Ventures"/>
+		<meta property="og:image" content="wp-content/uploads/2017/01/home-bg-color-1.png"/>
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:title" content="Ramp Ventures - We Buy SaaS Companies"/>
+		<meta name="twitter:image" content="wp-content/uploads/2017/01/home-bg-color-1.png"/>
 
-    <section id="our-companies" class="py-24 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-16 uppercase tracking-widest">Our Companies</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-16 items-center">
-                <img src="assets/rightinbox.png" alt="RightInbox" class="h-10 mx-auto img-hover">
-                <img src="assets/voilanorbert.png" alt="VoilaNorbert" class="h-10 mx-auto img-hover">
-                <img src="assets/mailshake.png" alt="Mailshake" class="h-10 mx-auto img-hover">
-                <div class="relative group">
-                    <span class="absolute -top-6 left-1/2 -translate-x-1/2 text-[9px] bg-blue-600 text-white px-2 py-0.5 rounded uppercase font-bold tracking-tighter">Acquired</span>
-                    <img src="assets/narrow.png" alt="Narrow" class="h-10 mx-auto img-hover">
-                </div>
-                <img src="assets/linktexting.png" alt="LinkTexting" class="h-10 mx-auto img-hover">
-                <img src="assets/pick.png" alt="Pick" class="h-10 mx-auto img-hover">
-                <img src="assets/quuu.png" alt="Quuu" class="h-10 mx-auto img-hover">
-            </div>
-        </div>
-    </section>
+		<style>
+			@font-face {
+				font-family: "sw-icon-font";
+				src: url("wp-content/plugins/social-warfare/fonts/sw-icon-font.eot");
+				src: url("wp-content/plugins/social-warfare/fonts/sw-icon-font.eot#iefix") format("embedded-opentype"),
+				     url("wp-content/plugins/social-warfare/fonts/sw-icon-font.woff") format("woff"),
+				     url("wp-content/plugins/social-warfare/fonts/sw-icon-font.ttf") format("truetype"),
+				     url("wp-content/plugins/social-warfare/fonts/sw-icon-font.svg#1445203416") format("svg");
+				font-weight: normal;
+				font-style: normal;
+			}
+		</style>
 
-    <section id="team" class="py-24 bg-gray-900 text-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-16 uppercase tracking-widest">Team</h2>
-            <div class="grid md:grid-cols-2 gap-20">
-                <div class="flex flex-col md:flex-row gap-8 items-center text-center md:text-left">
-                    <img src="assets/bob.png" alt="Bob Senoff" class="w-48 img-hover">
-                    <div>
-                        <h4 class="text-2xl font-bold mb-2">Bob Senoff</h4>
-                        <p class="text-gray-400 text-sm leading-relaxed">Bob brings over 20 years experience investing in and working with companies on product management, development and operations.</p>
-                    </div>
-                </div>
-                <div class="flex flex-col md:flex-row gap-8 items-center text-center md:text-left">
-                    <img src="assets/sujan.png" alt="Sujan Patel" class="w-48 img-hover">
-                    <div>
-                        <h4 class="text-2xl font-bold mb-2">Sujan Patel</h4>
-                        <p class="text-gray-400 text-sm leading-relaxed">Sujan brings over 14 years of internet marketing experience to work on expanding all areas of marketing and sales.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+		<style type="text/css">
+			img.wp-smiley,
+			img.emoji {
+				display: inline !important;
+				border: none !important;
+				box-shadow: none !important;
+				height: 1em !important;
+				width: 1em !important;
+				margin: 0 .07em !important;
+				vertical-align: -0.1em !important;
+				background: none !important;
+				padding: 0 !important;
+			}
+		</style>
 
-    <section id="contactus" class="py-24 bg-gray-50 border-t border-gray-200">
-        <div class="max-w-3xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-6 uppercase tracking-widest">Contact us</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <button class="border-2 border-gray-300 py-3 px-6 rounded font-semibold text-xs uppercase hover:bg-blue-600 hover:text-white transition">Am a Founder</button>
-                <button class="border-2 border-gray-300 py-3 px-6 rounded font-semibold text-xs uppercase hover:bg-blue-600 hover:text-white transition">Partnership Opportunity</button>
-                <button class="border-2 border-gray-300 py-3 px-6 rounded font-semibold text-xs uppercase hover:bg-blue-600 hover:text-white transition">Have A Company for Sale</button>
-                <button class="border-2 border-gray-300 py-3 px-6 rounded font-semibold text-xs uppercase hover:bg-blue-600 hover:text-white transition">Am an Investor</button>
-            </div>
-        </div>
-    </section>
+		<link rel="stylesheet" id="contact-form-7-css" href="wp-content/plugins/contact-form-7/includes/css/styles.css" media="all"/>
+		<link rel="stylesheet" id="social_warfare-css" href="wp-content/plugins/social-warfare/css/style.min.css" media="all"/>
+		<link rel="stylesheet" id="normalize-css" href="wp-content/themes/ramp/css/style.css" media="all"/>
+		<link rel="stylesheet" id="html5blank-css" href="wp-content/themes/ramp/style.css" media="all"/>
 
-    <footer class="bg-white border-t py-12 text-center text-[10px] text-gray-400 uppercase tracking-widest">
-        © All Rights Reserved. Ramp Ventures
-    </footer>
+		<script type="text/javascript" src="wp-content/themes/ramp/js/lib/conditionizr-4.3.0.min.js"></script>
+		<script type="text/javascript" src="wp-content/themes/ramp/js/lib/modernizr-2.7.1.min.js"></script>
+		<script type="text/javascript" src="wp-includes/js/jquery/jquery.js"></script>
+		<script type="text/javascript" src="wp-includes/js/jquery/jquery-migrate.min.js"></script>
+		<script type="text/javascript" src="wp-content/themes/ramp/js/main.js"></script>
+		<script type="text/javascript" src="wp-content/themes/ramp/js/modernizr-2.8.3.js"></script>
 
-</body>
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+
+		<script>
+			conditionizr.config({
+				assets: 'wp-content/themes/ramp',
+				tests: {}
+			});
+		</script>
+	</head>
+	<body class="home page-template page-template-template-home page-template-template-home-php page page-id-96">
+
+	<header class="header">
+		<div class="container">
+			<div class="header-content clearfix">
+				<figure>
+					<a href="/"><img src="wp-content/themes/ramp/images/logos/logo.png" alt=""></a>
+				</figure>
+				<div class="hide-menu">
+					<ul>
+						<li><a class="move" href="#our-companies">Companies</a></li>
+						<li><a class="move" href="#team">Team</a></li>
+						<li><a class="move" href="#contactus">Contact us</a></li>
+					</ul>
+				</div>
+				<button type="button" class="menu-lines">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<section class="top-home">
+		<div class="opasicty-bg"></div>
+		<div class="v-middle">
+			<div class="container">
+				<div class="top-home-content">
+					<h1>We BUY<br/><strong>SaaS Companies</strong></h1>
+				</div>
+			</div>
+		</div>
+		<figure>
+			<a href="#our-companies" class="move"><img src="wp-content/themes/ramp/images/arrows/arrow-down.svg" alt=""></a>
+		</figure>
+	</section>
+
+	<section class="our-companies-section" id="our-companies">
+		<div class="container">
+			<div class="our-companies-holder titles-home">
+				<h2>Our Companies</h2>
+
+				<div class="companies">
+					<figure>
+						<a href="https://www.rightinbox.com/" target="_blank"><img src="wp-content/uploads/2019/07/logo_green-1.png" alt=""></a>
+					</figure>
+					<a href="https://www.rightinbox.com/" target="_blank">rightinbox</a>
+				</div>
+
+				<div class="companies">
+					<figure>
+						<a href="https://www.voilanorbert.com/" target="_blank"><img src="wp-content/uploads/2019/07/voilanorbert-2-e1563559671588.png" alt=""></a>
+					</figure>
+					<a href="https://www.voilanorbert.com/" target="_blank">voilanorbert</a>
+				</div>
+
+				<div class="companies">
+					<figure>
+						<a href="https://mailshake.com/" target="_blank"><img src="wp-content/uploads/2017/01/mailshake-1.png" alt=""></a>
+					</figure>
+					<a href="https://mailshake.com/" target="_blank">Mailshake.com</a>
+				</div>
+
+				<div class="companies">
+					<figure>
+						<a href="http://narrow.io/" target="_blank"><img src="wp-content/uploads/2017/01/narrow-1.png" alt=""></a>
+					</figure>
+					<a href="http://narrow.io/" target="_blank">Narrow.io</a>
+				</div>
+
+				<div class="companies">
+					<div class="ribbon ribbon-top-right"><span>acquired</span></div>
+					<figure>
+						<a href="https://www.linktexting.com/" target="_blank"><img src="wp-content/uploads/2017/01/linktexting-1.png" alt=""></a>
+					</figure>
+					<a href="https://www.linktexting.com/" target="_blank">Linktexting.com</a>
+				</div>
+
+				<div class="companies">
+					<figure>
+						<a href="https://www.pick.co/" target="_blank"><img src="wp-content/uploads/2017/01/pick-1.png" alt=""></a>
+					</figure>
+					<a href="https://www.pick.co/" target="_blank">Pick.co</a>
+				</div>
+
+				<div class="companies">
+					<figure>
+						<a href="http://quuu.co/" target="_blank"><img src="wp-content/uploads/2017/01/quuu-1.png" alt=""></a>
+					</figure>
+					<a href="http://quuu.co/" target="_blank">Quuu.co</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="testimonials-home-section">
+		<div class="container">
+			<div class="testimonials-top-home">
+				<h3>What people are saying</h3>
+				<figure>
+					<img src="wp-content/themes/ramp/images/icons/quotes-home.svg" alt="">
+				</figure>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="testimonial-home-conent">
+						<p>"Bob has been integral to Narrow's success. His ideas have not only directly led to an increase in profits but also improved the product's functionality and usability."</p>
+						<div class="media">
+							<div class="media-left media-middle">
+								<figure>
+									<img src="wp-content/uploads/2017/01/Screen-Shot-2017-01-24-at-4.28.32-PM.png" alt="">
+								</figure>
+							</div>
+							<div class="media-body media-middle">
+								<h5>JERAD MAPLETHORPE</h5>
+								<h6>FOUNDER, NARROW.IO</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="testimonial-home-conent">
+						<p>"Sujan is the by far the most growth-driven marketer I've ever worked with. His aggressive go-to-market attitude redefines demand generation as a unique competitive advantage for the companies he works with, not just a growth strategy."</p>
+						<div class="media">
+							<div class="media-left media-middle">
+								<figure>
+									<img src="wp-content/uploads/2017/01/testimonial2-1.png" alt="">
+								</figure>
+							</div>
+							<div class="media-body media-middle">
+								<h5>CHAD HALVORSON</h5>
+								<h6>CEO OF WHEN I WORK</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about-autors-section" id="team">
+		<div class="about-autors-holder titles-home">
+			<h2>Team</h2>
+
+			<div class="autor-hold">
+				<div class="container">
+					<div class="about-autors-content1 autor-holder">
+						<h5>Bob Senoff</h5>
+						<p>Bob brings over 20 years experience investing in and working with companies on product management, development and operations. He is driven to help build dynamic, scalable startups. Having worked in venture capital, angel investing and in bootstrapping companies, Bob has been involved in a broad range of equity raises, acquisitions and public offerings.</p>
+						<a href="https://www.linkedin.com/in/bobsenoff" class="linkedin-home"></a>
+						<a href="https://www.twitter.com/bobsenoff" class="twitter-home"></a>
+					</div>
+					<div class="about-autors-content2 autor-holder">
+						<figure>
+							<img src="wp-content/uploads/2017/01/bob-1.png" alt="">
+						</figure>
+					</div>
+				</div>
+			</div>
+
+			<div class="autor-hold">
+				<div class="container">
+					<div class="about-autors-content1 autor-holder">
+						<h5>Sujan Patel</h5>
+						<p>Sujan brings over 14 years of internet marketing experience to work on expanding all areas of marketing, sales and partnerships for our companies. He has led the digital marketing strategy for companies like Sales Force, Mint, Intuit and many other Fortune 500 caliber companies.</p>
+						<a href="https://www.facebook.com/sujan.uplift" class="facebook-home"></a>
+						<a href="https://www.linkedin.com/in/sujanpatel" class="linkedin-home"></a>
+						<a href="https://www.twitter.com/sujanpatel" class="twitter-home"></a>
+					</div>
+					<div class="about-autors-content2 autor-holder">
+						<figure>
+							<img src="wp-content/uploads/2017/01/sujan-1.png" alt="">
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contacts-home-section" id="contactus">
+		<div class="container">
+			<div class="contacts-home-holder titles-home">
+				<h2>Contact us</h2>
+				<p>Ramp Ventures works with our partner companies on revenue growth, product management and operations. Have something interesting you want to talk about?</p>
+				<form action="#" method="post" class="wpcf7-form" novalidate="novalidate">
+					<p>
+						<select name="youare" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
+							<option value="Am a Founder">Am a Founder</option>
+							<option value="Have A Partnership Opportunity">Have A Partnership Opportunity</option>
+							<option value="Have A Company for Sale">Have A Company for Sale</option>
+							<option value="Am an Investor">Am an Investor</option>
+						</select><br/>
+						<input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full name"/><br/>
+						<input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="E-mail"/><br/>
+						<textarea name="message" cols="1" rows="1" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message"></textarea><br/>
+						<input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit"/>
+					</p>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-holder clearfix">
+				<ul>
+					<li><a class="move" href="#our-companies">Companies</a></li>
+					<li><a class="move" href="#team">Team</a></li>
+					<li><a class="move" href="#contactus">Contact us</a></li>
+				</ul>
+				<div class="rig">
+					<div class="textwidget"><p>All Rights Reserved</p></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js"></script>
+	<script type="text/javascript">
+		var _wpcf7 = {"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+	</script>
+	<script type="text/javascript" src="wp-content/plugins/contact-form-7/includes/js/scripts.js"></script>
+	<script type="text/javascript" src="wp-content/plugins/social-warfare/js/script.min.js"></script>
+	<script type="text/javascript" src="wp-includes/js/wp-embed.min.js"></script>
+	<script type="text/javascript">var swpClickTracking = false; var swp_nonce = "c02ebe35d1";</script>
+
+	</body>
 </html>
